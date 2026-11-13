@@ -1,0 +1,22 @@
+# Personal / private AI context: scoped per directory, never committed
+*.local.md
+
+# Per-ticket and root private working material (drafts, heavy inputs, raw copy-pastes)
+**/.local/
+.local/
+
+# Secrets / environment
+.env
+.env.local
+
+# Local AI-tool settings and personal skills (not shared)
+.claude/settings.local.json
+.claude/skills/*.local/
+.agents/skills/*.local/
+.cursor/skills/*.local/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

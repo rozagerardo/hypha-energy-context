@@ -1,0 +1,24 @@
+---
+description: Hypha context-repo workflow — trigger this rule when someone (a) makes first contact with no specific task: "hi", "what is this", "let's get started", "help me get oriented"; (b) asks to set up their dev config: "set up my context", "init my config", "onboard me", "dev setup"; (c) starts new work: "I'm starting #X", "new task"; (d) resumes in-progress work: "I'm continuing #X", "picking up where I left off", starting Phase B after Phase A; (e) wraps up or records progress: "let's checkpoint", "wrap up for the day"; (f) reads or updates the GitHub board or issues: "update the board", "move #X to In Review"; or (g) refreshes local context: "update my context", "pull latest".
+alwaysApply: false
+---
+
+## Hypha workflow — skill routing table
+
+Canonical skills live in `.agents/skills/`. Cursor slash commands (`.cursor/skills/henergy-*/`) are thin
+wrappers to the same files — use either `/henergy-*` or the natural-language triggers below. Read the
+matching skill file and follow it.
+
+| When the person… | Skill file | Procedure |
+|---|---|---|
+| makes **first contact** / says hi / no goal yet | [`henergy-start`](../../.agents/skills/henergy-start/SKILL.md) | [`workflow/get-started.md`](../../workflow/get-started.md) |
+| wants **dev config setup** / no `AGENTS.local.md` | [`henergy-dev-setup`](../../.agents/skills/henergy-dev-setup/SKILL.md) | [`workflow/personal-config.md`](../../workflow/personal-config.md) |
+| **starts** a new unit of work ("I'm starting #X") | [`henergy-task-init`](../../.agents/skills/henergy-task-init/SKILL.md) | [`workflow/task-init.md`](../../workflow/task-init.md) |
+| **resumes** in-progress work ("I'm continuing #X") | [`henergy-task-resume`](../../.agents/skills/henergy-task-resume/SKILL.md) | [`workflow/task-resume.md`](../../workflow/task-resume.md) |
+| **wraps up** / records progress | [`henergy-checkpoint`](../../.agents/skills/henergy-checkpoint/SKILL.md) | [`workflow/checkpoint.md`](../../workflow/checkpoint.md) |
+| reads/updates **GitHub** board/issues (technical, opted-in) | [`henergy-board`](../../.agents/skills/henergy-board/SKILL.md) | [`workflow/github-sync.md`](../../workflow/github-sync.md) |
+| needs **local context refreshed** | [`henergy-update-context`](../../.agents/skills/henergy-update-context/SKILL.md) | [`workflow/sync-context.md`](../../workflow/sync-context.md) |
+
+Always read the developer's `AGENTS.local.md` in cascade order (root general →
+`progress/members/<username>/`) and state the review mode and decision posture being used —
+never silently.
