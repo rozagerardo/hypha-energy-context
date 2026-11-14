@@ -3,7 +3,7 @@
 > **Status:** **FROZEN 2026-11-14** (Ger signed off the spec: "we can freeze, and proceed with the implementation").
 > Direction changes after this go to `decisions.md`, not here. This is Ger's sign-off on the **technical spec**;
 > Edgar's sign-off on the Block 1 wording / the delivery (the agreement's Commitment Gate) is separate and still pending.
-> **Phase B (2026-11-14):** value-x PR #4 open (not merged/deployed); Hypha-side config and deploy pending. See `decisions.md` D9-D14.
+> **Phase B (2026-11-14):** value-x PR #4 **merged**; Hypha prod config applied and verified; **awaiting Zek's manual deploy**, then prod check and Edgar's sign-off. See `decisions.md` D9-D15. **Last touched:** 2026-11-14.
 > **SDD level:** 2 (standard). Phase B (code) happens in `value-x.com`, in a fresh session via the satellite.
 
 ## Goal

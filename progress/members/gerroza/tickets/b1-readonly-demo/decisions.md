@@ -76,3 +76,18 @@ Supersedes spec D1 (dropdown + `/platform` index) and spec item 5; also resolves
 - **Community page:** site nav plus the iframe only (full width, viewport height under the fixed nav). No title, no "Open in Hypha" button, no footer.
 - **Why:** keep the site's single-page pattern; mobile has no nav today (hidden below 768px) and Projects behaves the same, so Platforms is consistent with it.
 
+## D15 — Hypha-side config applied; value-x PR merged; awaiting deploy (2026-11-14, Ger)
+
+- **Hypha prod config done (Ger, Vercel, production app, redeployed).** `WHITE_LABEL_EMBED_CONFIG` now also has the client
+  `{"id":"valuex","spaces":[{"slug":"ponta-do-sol-energy-community","framingOrigins":["https://value-x.com","https://www.value-x.com"]}]}`
+  next to the existing clients (`denyse` unchanged; Ger's own `gerroza-test` client is also present, not part of Block 1). No localhost in prod.
+- **Verified (Ger, 2026-11-14):** `curl -sI https://app.hypha.earth/embed/ponta-do-sol-energy-community` returns
+  `frame-ancestors https://denyse.org https://value-x.com https://www.value-x.com`.
+- **www is a separate origin:** `https://www.value-x.com/` answers 200 (not a redirect), so both origins are listed.
+- **value-x PR #4 merged to `master`** (merge commit `ad338a7`, 2026-11-14 20:19 UTC) by Ger. Merging deploys nothing; **Zek was asked to deploy by hand**
+  (`dotnet publish -c Release`, .NET 9 SDK). Not live yet.
+- **Still pending:** the deploy; the anonymous prod check on both hosts; Edgar's sign-off (wording; path is `/platform/<slug>`, there is no `/platform` index, Ger will say so at the demo);
+  denyse.org (admin contact from Edgar; the `denyse` client already exists); mobile nav (leave to Block 3, per D13 option c unless Ger says otherwise).
+- **Pattern-card candidates (not drafted):** (1) verify "it redirects" style claims against the live system before configuring allowlists (the `www`
+  origin was assumed redirected and was not); (2) a read-only sandbox clone of the platform repo for partner-integration tests, with test config kept
+  local and the production change made through the owner's normal flow.

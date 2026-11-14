@@ -1,13 +1,14 @@
 # Current priorities
 
-> Updated 2026-11-14. Board: https://github.com/orgs/Hypha-Energy/projects/13 (website only).
+> Updated 2026-11-14 (checkpoint). Board: https://github.com/orgs/Hypha-Energy/projects/13 (website only).
 > Agreement (blocks, acceptance): `ger-hypha-energy/agreements/112026/draft.md`.
 
 ## This week
 
-- **Block 1: read-only demo (urgent).** `/platform` on `value-x.com`; Zek deploys by hand (prod expected
-  weekend or Monday). denyse.org waits on Edgar for the admin contact. ValueX origin to be added to the
-  embed config (Hypha DAO side). -> [`b1-readonly-demo`](../progress/members/gerroza/tickets/b1-readonly-demo/spec.md)
+- **Block 1: read-only demo (urgent).** Done on our side: value-x PR #4 merged (Platforms section on Home,
+  `/platform/<slug>` embeds Ponta do Sol), Hypha prod embed config updated and verified. **Waiting on Zek's manual
+  deploy**, then anonymous prod check, then Edgar's sign-off. denyse.org waits on Edgar for the admin contact.
+  -> [`b1-readonly-demo`](../progress/members/gerroza/tickets/b1-readonly-demo/spec.md)
 
 ## Next (steady, small)
 
@@ -22,7 +23,7 @@ Deadlines in the posted agreement: Block 2 in 2~4 months, Blocks 3 and 4 in 3~6 
 ## Waiting on others
 
 - Edgar: Block 1 wording sign-off, commitment and token mix (Tier 3 is confirmed), denyse.org admin contact, research folder, membership in the Space.
-- Zek: manual deploy of value-x; access to the sites and Lovable project.
+- Zek: manual deploy of value-x (requested); access to the sites and Lovable project.
 
 ## Parked
 
