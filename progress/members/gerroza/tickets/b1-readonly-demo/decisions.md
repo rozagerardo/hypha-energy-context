@@ -35,24 +35,35 @@ Vercel (not in git), so the real action is a Vercel env edit plus redeploy. This
 outside the value-x PR"); no conflict. Prod and local configs differ by design: prod has no localhost and uses the
 Ponta do Sol slug.
 
-## D12 — Phase B implementation choices (2026-11-14, value-x, branch `rozagerardo/feat/platform-pages`, uncommitted)
+## D13 — Phase B implementation choices (2026-11-14, value-x, branch `rozagerardo/feat/platform-pages`, uncommitted)
 
 Within the spec's "smallest change in the existing pattern"; nothing here changes direction.
 - **List:** `Components/PlatformCommunities.cs` (static record list + `Find`). Real entry: `ponta-do-sol-energy-community`
   (title, `logoUrl` and first sentence of `description` taken from the raw API response). Used by nav, index and page.
 - **Pages:** `Components/Pages/PlatformIndex.razor` (`/platform`), `CommunityPage.razor` (`/platform/{Slug}`). Named so they do not
   clash with the `PlatformCommunity` record. Unknown slug: "Community not found" + link, HTTP 404 (cascading `HttpContext`).
-- **Iframe:** `{Hypha:EmbedBaseUrl}/embed/{slug}`, no `sandbox`, 100% wide, `min(900px, 85vh)` tall; "Open in Hypha" new tab.
-  `appsettings.json` has `Hypha:EmbedBaseUrl = https://app.hypha.earth`; local override via env var only.
+- **Iframe:** `{PlatformCommunities.EmbedBaseUrl}/embed/{slug}`, no `sandbox`, 100% wide, `min(900px, 85vh)` tall; "Open in Hypha" new tab.
+  Per Ger's D12 (written after this entry) the base URL is a hardcoded constant next to the list; no `appsettings`, no env var. Superseded the config approach built first (removed).
 - **Dropdown:** CSS only (hover + `focus-within`), added to the existing inline nav of Home, Denyse, SolarNow and both new pages. The
   trigger is a link to `/platform`, so touch devices without hover still reach the index.
 - **Index card image:** uses `logoUrl` (contain, padded), not `leadImage`.
 - **Data caveat:** a summarised web fetch returned a wrong `logoUrl`; the committed value was taken from the raw JSON (curl) and both
   image URLs answer 200.
-- **TEMP:** a `cordoba-ecovillage` entry marked `TEMP-LOCAL-TEST` is in the list for the local test; must be removed before any commit.
+- **TEMP (uncommitted, marked `TEMP-LOCAL-TEST`):** the `cordoba-ecovillage` list entry and `EmbedBaseUrl = http://localhost:3000`. Restore the prod URL and remove the entry before any commit.
 
-## Open from D12 (Ger decides)
+## Open from D13 (Ger decides)
 - **Mobile nav:** existing CSS hides `.nav-menu` entirely below 768px, so on phones no nav (and no Platforms dropdown) exists today.
   Options: (a) leave as is (smallest change; mobile visitors reach `/platform` only by direct link); (b) add a small
   mobile-only rule showing the menu or a Platforms link (touches shared CSS, goes beyond the spec's "no refactor" only mildly);
   (c) leave to Block 3 (ValueX refresh).
+
+## D12 — Hardcode the embed base URL; no configuration, no env vars (2026-11-14, Ger)
+
+Supersedes spec item 4 ("Embed base URL from configuration", `Hypha:EmbedBaseUrl`, the `Hypha__EmbedBaseUrl` override).
+- The base URL `https://app.hypha.earth` is a **hardcoded constant** in value-x (one place, next to the community list).
+  Nothing is added to `appsettings.json` and **no environment variable is needed in prod or anywhere else**, so the
+  manual deploy by Zek needs no setup beyond shipping the build.
+- **Why:** Ger has no access to the deploy setup, and the whole site gets cleaned up in a later block (Block 3).
+- **Local test:** the only reason a different host was needed. For local testing only, **temporarily edit that constant to
+  `http://localhost:3000` (and add the temporary `cordoba-ecovillage` list entry), uncommitted**, and restore both before any
+  commit. Never commit the localhost value.
