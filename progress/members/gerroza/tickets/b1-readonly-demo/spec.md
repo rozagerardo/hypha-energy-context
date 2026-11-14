@@ -3,6 +3,7 @@
 > **Status:** **FROZEN 2026-11-14** (Ger signed off the spec: "we can freeze, and proceed with the implementation").
 > Direction changes after this go to `decisions.md`, not here. This is Ger's sign-off on the **technical spec**;
 > Edgar's sign-off on the Block 1 wording / the delivery (the agreement's Commitment Gate) is separate and still pending.
+> **Phase B in progress (2026-11-14):** code written in `value-x.com` (branch `rozagerardo/feat/platform-pages`, uncommitted); server-side checks pass against the local hypha-web; browser/visual check pending. See `decisions.md` D9-D12.
 > **SDD level:** 2 (standard). Phase B (code) happens in `value-x.com`, in a fresh session via the satellite.
 
 ## Goal
