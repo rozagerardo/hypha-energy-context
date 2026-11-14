@@ -1,6 +1,6 @@
 # Current priorities
 
-> Updated 2026-11-13. Board: https://github.com/orgs/Hypha-Energy/projects/13 (website only).
+> Updated 2026-11-14. Board: https://github.com/orgs/Hypha-Energy/projects/13 (website only).
 > Agreement (blocks, acceptance): `ger-hypha-energy/agreements/112026/draft.md`.
 
 ## This week
@@ -11,6 +11,8 @@
 
 ## Next (steady, small)
 
+Deadlines in the posted agreement: Block 2 in 2~4 months, Blocks 3 and 4 in 3~6 months.
+
 - **Block 2: hypha.energy website.** Brand-book check and copy review under Marieke. Candidates on the board:
   #25 inventory of the shared layer vs Guidelines v3.1, #26/#27 "Our ambition" claims, #29 renamed logo files, #32 review address.
 - **Block 3: ValueX refresh.** Credible site for grant bodies; Lovable vs simpler tool proposal. First: confirm which ValueX site is live.
@@ -19,7 +21,7 @@
 
 ## Waiting on others
 
-- Edgar: Block 1 wording sign-off, Tier 3 / commitment / token mix, denyse.org admin contact, research folder, membership in the Space.
+- Edgar: Block 1 wording sign-off, commitment and token mix (Tier 3 is confirmed), denyse.org admin contact, research folder, membership in the Space.
 - Zek: manual deploy of value-x; access to the sites and Lovable project.
 
 ## Parked

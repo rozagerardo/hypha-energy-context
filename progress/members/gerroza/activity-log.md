@@ -2,6 +2,12 @@
 
 Newest first. Factual; link rather than duplicate. Agreement detail: `ger-hypha-energy/agreements/112026/`.
 
+- **2026-11-14 (agreement clarified).** Walked through the context layout with Ger (Hypha DAO vs Hypha Energy,
+  shared repos vs personal `ger-*` repos; all consistent). Edgar confirmed Tier 3 (rate in the personal repo).
+  The agreement posted in the Hypha Energy Space differs from the 2026-11-09 draft: Block 1 is "potentially
+  read-only", writes and account actions "not guaranteed", "snippet or DNS setup"; deadlines are now
+  2~4 months (Block 2) and 3~6 months (Blocks 3, 4). Recorded in `ger-hypha-energy/agreements/112026/`.
+  No change to the Block 1 plan. -> [`tickets/b1-readonly-demo`](tickets/b1-readonly-demo/spec.md)
 - **2026-11-13 (setup + update).** Created the Hypha Energy repos: `ger-hypha-energy` (personal) and this
   context repo (workflow copied from `hypha-context`, skills renamed `henergy-*`). Read the Hypha-Energy
   org (11 repos; map in `ger-hypha-energy/notes/org-repos.md`, summarised in `solution/tech/codebases.md`)

@@ -2,7 +2,7 @@
 
 > **Status:** Phase A (spec) draft; Phase B partly started (value-x page). Not frozen: the Commitment Gate
 > is Edgar's sign-off on Block 1 wording plus the agreement itself (see `ger-hypha-energy`).
-> **Last updated:** 2026-11-13. **SDD level:** 2 (standard).
+> **Last updated:** 2026-11-14. **SDD level:** 2 (standard).
 
 ## Goal
 
@@ -18,6 +18,11 @@ embedding the Hypha platform through one iframe snippet.
 4. A Space already public in production; a made-up Space only if synthetic data is needed.
 
 Acceptance: both sub paths load for an anonymous visitor, no write possible, Edgar signs off. Deadline: this week.
+
+> **2026-11-14:** the wording posted in the Space is looser: "potentially read-only", account actions and
+> writes "not guaranteed", "write is not a strict requirement; the landing is in place", delivery "one snippet
+> or DNS setup". The scope above still meets it; we keep read-only. Detail:
+> `ger-hypha-energy/agreements/112026/posted-in-space-20261114.md`.
 
 ## Known facts
 
