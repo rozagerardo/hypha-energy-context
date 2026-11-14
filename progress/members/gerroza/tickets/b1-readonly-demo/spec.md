@@ -3,6 +3,7 @@
 > **Status:** Phase A (spec) draft; Phase B partly started (value-x page). Not frozen: the Commitment Gate
 > is Edgar's sign-off on Block 1 wording plus the agreement itself (see `ger-hypha-energy`).
 > **Last updated:** 2026-11-14. **SDD level:** 2 (standard).
+> **Satellite:** code work happens in `value-x.com`, whose `.henergy-context.local/` points here (`active_spec_frozen: false`; see `workflow/satellite.md`).
 
 ## Goal
 
