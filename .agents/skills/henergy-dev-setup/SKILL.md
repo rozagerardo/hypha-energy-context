@@ -35,4 +35,4 @@ how to work with this developer (review mode, decision posture, SDD level, tone,
 
 Do not duplicate the schema or steps here: `workflow/personal-config.md` is the source of truth.
 (No satellite step: this repo has no satellite mechanism yet; code repos are cloned read-only under
-`../src/`, see `solution/tech/codebases.md`.)
+`../`, see `solution/tech/codebases.md`.)

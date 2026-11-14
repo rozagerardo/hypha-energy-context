@@ -59,7 +59,7 @@ State clearly and concisely:
   the plan"* / *"Review pass + record decisions before closing."*
 - **If Phase B:** explicitly remind to bring the code repo into scope — open in the same workspace
   (`/add-dir` for Claude Code, multi-root for Cursor). The implementation plan lives here; the code
-  changes happen in the relevant repo under `../src/` (`hypha-energy`, `Hypha.Energy`, `value-x.com`).
+  changes happen in the relevant repo under `../` (`hypha-energy`, `Hypha.Energy`, `value-x.com`).
 
 ### 6. State the mode
 Always state the **review mode** and **decision posture** from the developer's `AGENTS.local.md` —

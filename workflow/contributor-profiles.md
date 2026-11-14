@@ -2,7 +2,7 @@
 
 > The six engagement profiles that shape how AI tools adapt their behavior when helping Hypha
 > contributors. Referenced from the root [`AGENTS.md`](../AGENTS.md). Identify the profile first —
-> it determines workflow depth, satellite setup, GitHub integration, auto-capture behavior,
+> it determines workflow depth, GitHub integration, auto-capture behavior,
 > and how the AI should communicate. When in doubt, ask one or two orienting questions rather than
 > guessing.
 

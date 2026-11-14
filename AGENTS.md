@@ -31,7 +31,7 @@ sibling personal repo `ger-hypha-energy`.
 | `ger-hypha-energy` | Ger's **personal** involvement: agreements, call prep, comms drafts, personal notes |
 | `hypha-context` | Same idea for **Hypha DAO** (shared with that team). Source of the workflow used here |
 | `ger-hypha` | Ger's personal Hypha DAO repo |
-| Org repos (`Hypha-Energy/*`) | The code. Read-only clones in `../src/` (`hypha-energy`, `Hypha.Energy`, `value-x.com`) |
+| Org repos (`Hypha-Energy/*`) | The code. Read-only clones in `../` (`hypha-energy`, `Hypha.Energy`, `value-x.com`) |
 
 Do not mix Hypha DAO material into this repo or Hypha Energy material into the DAO repos. The only
 bridge is the white-label iframe embed (Hypha DAO's platform, shown to Hypha Energy partners).
@@ -144,7 +144,7 @@ The method itself is [`workflow/sdd-method.md`](workflow/sdd-method.md).
 ## Cross-repo work: start here, change code there
 
 This repo holds the *why / what / progress / how-we-work*; the **code lives in the org repos**, cloned
-read-only-by-default under `C:\Users\rozag\projects\hypha-energy\src\`. Each carries its own context
+read-only-by-default as siblings of this repo, under `C:\Users\rozag\projects\hypha-energy\src\`. Each carries its own context
 (`value-x.com/CLAUDE.md`, `Hypha.Energy/.github/copilot-instructions.md`, the website's
 `Guidelines.md`). The workflow composes the two: ground the task here, bring the code repo into scope
 (`/add-dir`, multi-root workspace, or launch from the parent folder), make code changes **there**

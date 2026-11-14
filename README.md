@@ -8,10 +8,10 @@ It mirrors `hypha-context` (the Hypha DAO team repo), with one difference: **thi
 now** (`rozagerardo/hypha-energy-context`, not in the Hypha-Energy org) and can be moved to the org
 later if the team wants it.
 
-> **Local path:** `C:\Users\rozag\projects\hypha-energy\hypha-energy-context`
+> **Local path:** `C:\Users\rozag\projects\hypha-energy\src\hypha-energy-context`
 > **Org:** https://github.com/Hypha-Energy
 > **Personal sibling:** `ger-hypha-energy` (agreements, comms, personal notes)
-> **Code clones (read-only):** `C:\Users\rozag\projects\hypha-energy\src\`
+> **Code clones (read-only, siblings of this repo):** `C:\Users\rozag\projects\hypha-energy\src\`
 
 ## New here? Say hi
 
