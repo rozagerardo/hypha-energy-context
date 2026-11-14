@@ -67,3 +67,12 @@ Supersedes spec item 4 ("Embed base URL from configuration", `Hypha:EmbedBaseUrl
 - **Local test:** the only reason a different host was needed. For local testing only, **temporarily edit that constant to
   `http://localhost:3000` (and add the temporary `cordoba-ecovillage` list entry), uncommitted**, and restore both before any
   commit. Never commit the localhost value.
+
+## D14 — Platforms as a Home section, single nav link, iframe-only page (2026-11-14, Ger, after reviewing the build)
+
+Supersedes spec D1 (dropdown + `/platform` index) and spec item 5; also resolves the D13 mobile-nav question.
+- **Home:** new `#platforms` section (same grid/cards as Projects, shorter logo area, heading only) listing the communities; each card links to `/platform/<slug>`.
+- **Nav:** a single "Platforms" link to the section (`#platforms` on Home, `/#platforms` elsewhere), same as Projects. No dropdown, no sub-menus. The `/platform` index page and the dropdown CSS were removed (`/platform` is now a 404).
+- **Community page:** site nav plus the iframe only (full width, viewport height under the fixed nav). No title, no "Open in Hypha" button, no footer.
+- **Why:** keep the site's single-page pattern; mobile has no nav today (hidden below 768px) and Projects behaves the same, so Platforms is consistent with it.
+
