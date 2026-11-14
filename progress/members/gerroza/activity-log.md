@@ -2,6 +2,7 @@
 
 Newest first. Factual; link rather than duplicate. Agreement detail: `ger-hypha-energy/agreements/112026/`.
 
+- **2026-11-14 (value-x local setup, static-hosting idea).** Replaced the untracked `value-x.com/CLAUDE.md` (ours, not upstream) with `AGENTS.md` + pointer `CLAUDE.md` + gitignored `AGENTS.local.md`, after re-checking its claims against the code. .NET 9 SDK installed. Scaffolded a local-only discovery ticket on serving value-x as static hosting (no GitHub issue until raised with the team). -> [`tickets/valuex-static-hosting`](tickets/valuex-static-hosting/spec.md)
 - **2026-11-14 (agreement clarified).** Walked through the context layout with Ger (Hypha DAO vs Hypha Energy,
   shared repos vs personal `ger-*` repos; all consistent). Edgar confirmed Tier 3 (rate in the personal repo).
   The agreement posted in the Hypha Energy Space differs from the 2026-11-09 draft: Block 1 is "potentially

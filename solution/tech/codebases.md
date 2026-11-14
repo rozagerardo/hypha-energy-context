@@ -34,7 +34,7 @@
 - Outside the four agreement blocks; useful for domain context.
 
 ### `value-x.com` : ValueX site (cloned, `master`)
-- **Stack:** .NET 9 Blazor Web App, static server-side rendering only (no interactivity), no tests, no DB. Has its own `CLAUDE.md`.
+- **Stack:** .NET 9 Blazor Web App, static server-side rendering only (no interactivity), no tests, no DB. Has `AGENTS.md` + pointer `CLAUDE.md` (written locally 2026-11-14, untracked; not upstream).
 - **Run:** `dotnet run --launch-profile http` (http://localhost:5249).
 - **Pages:** `Home` (`/`, sections `#home #offer #who-we-help #projects #contact`), `Denyse` (`/projects/denyse`), `SolarNow`.
 - **Gotchas:** `Routes.razor` has no `DefaultLayout`, so `MainLayout`/`NavMenu` are unused leftovers and each page renders its own
