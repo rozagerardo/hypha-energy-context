@@ -14,6 +14,11 @@
 - Nothing is rendered per user or per request except the antiforgery/`Error` plumbing. So the output is
   deterministic HTML plus assets (13 MB, 65 files).
 
+## Where it runs today (V, observed 2026-11-14 from response headers)
+
+`Server: Microsoft-IIS/10.0`, `X-Powered-By: ASP.NET`, `ARRAffinity` cookie: consistent with **Azure App Service
+on Windows** (**U**: confirm with Zek). Cost and plan tier still unknown.
+
 ## Ways to get static output (K, to verify)
 
 | Option | What it is | Notes |

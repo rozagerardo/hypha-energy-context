@@ -31,6 +31,7 @@ sibling personal repo `ger-hypha-energy`.
 | `ger-hypha-energy` | Ger's **personal** involvement: agreements, call prep, comms drafts, personal notes |
 | `hypha-context` | Same idea for **Hypha DAO** (shared with that team). Source of the workflow used here |
 | `ger-hypha` | Ger's personal Hypha DAO repo |
+| `hypha-web--hypha-energy` | A separate clone of `hypha-dao/hypha-web` (in `C:\Users\rozag\projects\hypha\src\`) used as a **sandbox to test Hypha Energy work and integrations** against the Hypha platform. Has a local `.henergy-context.local/` pointing back here. Not one of the regular Hypha DAO working clones |
 | Org repos (`Hypha-Energy/*`) | The code. Read-only clones in `../` (`hypha-energy`, `Hypha.Energy`, `value-x.com`) |
 
 Do not mix Hypha DAO material into this repo or Hypha Energy material into the DAO repos. The only
