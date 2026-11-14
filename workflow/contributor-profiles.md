@@ -18,6 +18,8 @@ The reference implementation of the workflow.
 
 **GitHub integration:** Enabled if opted in (`github.enabled: true` in `AGENTS.local.md`).
 
+**Satellite:** Yes, full ([`satellite.md`](satellite.md)).
+
 **SDD discipline:** Full — explicit skill invocations, human-decides posture, checkpoint at session
 end. AI surfaces callouts and open threads; developer confirms direction.
 
@@ -35,6 +37,8 @@ they're focused on shipping, not on maintaining context. May use Cursor primaril
 for most workflow mechanics. Understands the product technically but avoids overhead.
 
 **GitHub integration:** Enabled if opted in; otherwise skipped silently.
+
+**Satellite:** Yes, with auto-capture at soft triggers ([`satellite.md`](satellite.md)).
 
 **SDD discipline:** Minimal input — AI does the upkeep and just shows the result. Specs are still
 written before code (the discipline is in the method, not the manual steps). Checkpoint may be

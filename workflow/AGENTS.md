@@ -28,6 +28,7 @@ are thin shims that just point back to these files.
 | [`github-sync.md`](github-sync.md) | The **GitHub integration** — reading/updating issues, PRs, and the project board via the `gh` CLI (skills-over-MCP). **Gated** to technical opted-in developers; writes always confirm first. Runs ad-hoc *and* as a soft step inside `task-init` / `checkpoint`. |
 | [`git-conventions.md`](git-conventions.md) | **Git branch naming** shared by every repo using this context — team `<type>/<description>` vs. personal `<username>/<type>/GH-<issue#>-<description>`, allowed types. Read before creating a branch. |
 | [`sync-context.md`](sync-context.md) | **Keep the local context current** (`git pull`) so the AI reads fresh info, not a stale snapshot. A **cross-cutting step**: auto-refresh at session start for non-technical users, a reminder/offer for technical ones. Runs ad-hoc *and* inside `get-started` / `task-init` / `task-resume` / `checkpoint`. Distinct from `github-sync` (board, not files). |
+| [`satellite.md`](satellite.md) | The **satellite** mechanism: a local `.henergy-context.local/` projection (config, workflow, pointers, active spec) plus committed `henergy-*` skills in each code repo, so work can proceed from the code repo alone and write back here. Separate from the Hypha DAO satellite. |
 | (skills moved to [`.agents/skills/`](../.agents/skills/)) | **Tool-agnostic skill definitions** live in `.agents/skills/<name>/SKILL.md`. Vendor wrappers (`.claude/skills/`, `.cursor/rules/`) are thin pointers to those files. |
 
 ## The entry points

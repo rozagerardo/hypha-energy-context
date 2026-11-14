@@ -136,8 +136,7 @@ side by side).
   [`workflow/sync-context.md`](workflow/sync-context.md). `/henergy-update-context`.
 
 Not carried over from `hypha-context` (add when needed): CodeRabbit triage, brief generator, feedback
-intake, team-cadence input, and the **satellite** mechanism (a `.hypha-context.local/` projection into
-code repos).
+intake, team-cadence input.
 
 The method itself is [`workflow/sdd-method.md`](workflow/sdd-method.md).
 
@@ -150,6 +149,17 @@ read-only-by-default as siblings of this repo, under `C:\Users\rozag\projects\hy
 (`/add-dir`, multi-root workspace, or launch from the parent folder), make code changes **there**
 following **its** rules and PR flow, and record back here (`checkpoint`). Never push to an org repo
 without Ger's explicit go-ahead.
+
+### Satellite: working from a code repo alone
+
+Profile A/B developers get a **satellite**, a local `.henergy-context.local/` directory in the code repo
+(today `value-x.com`), plus committed `henergy-*` skills there (`task-init`, `task-resume`, `checkpoint`,
+`board`). It projects personal config, workflow profile, absolute pointers and the active spec, so an AI
+opened on the code repo alone has the context, and writes progress back here. It is local, never
+committed, and **separate from the Hypha DAO satellite** (`.hypha-context.local/`, `hypha-*` skills):
+two bounded contexts, no shared tree. Setup: `/henergy-dev-setup`. Refresh: `/henergy-update-context`.
+Phase B kickoff: `/henergy-task-resume`. Close: `/henergy-checkpoint`.
+Full procedure: [`workflow/satellite.md`](workflow/satellite.md).
 
 ## Personal context files (`AGENTS.local.md`)
 

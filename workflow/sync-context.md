@@ -49,6 +49,10 @@ profiles, `remind` for technical)
 No discarding uncommitted changes, no force, no clobbering a branch. If a pull would conflict or
 isn't a clean fast-forward, **stop and surface it** — a human resolves it.
 
+### 3b. Refresh satellites (profile A/B)
+If the developer has a satellite in any code repo (`.henergy-context.local/`), refresh it after the
+pull: [`satellite.md`](satellite.md) procedure 2.
+
 ### 4. Proceed
 Once current (or once you've flagged that it can't be), continue with whatever the session is for.
 

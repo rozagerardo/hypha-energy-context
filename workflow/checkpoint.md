@@ -77,6 +77,11 @@ Skip silently if not gated-in.
 - Blocked state confirmed → move to **Blocked**
 Always mirror the spec status; don't leave the board stale.
 
+### 4c. Satellite: park or deactivate the spec
+If the work happened in a code repo with a satellite, follow [`satellite.md`](satellite.md) procedure 4
+(complete: move to done-cache; session wrap: park). A checkpoint may commit to **both repos**: code
+repo first (only if asked), then this one. Run `git status` in both.
+
 ### 5. Distil reusable lessons toward patterns/
 If a genuinely reusable lesson emerged (a technique, a gotcha, a workflow refinement), **flag it as a
 Pattern-Card candidate** for `patterns/` — draft it if it's ripe, or just note the candidate in

@@ -49,6 +49,12 @@ From the `spec.md` Status header, determine which SDD phase the ticket is in:
 | **Phase C — Loop return** | In Review / Wrapping up | Implementation done; reviewing + extracting lessons. |
 | **Done** | Complete | Ticket closed (run only if there's unrecorded follow-up). |
 
+### 4b. Satellite: Phase B spec copy
+If the ticket is entering or in Phase B and the code repo has a satellite, follow
+[`satellite.md`](satellite.md) procedure 3: copy the **frozen** spec to `spec-active.local.md` (parking
+any other active one), or, if the spec is not frozen yet, point `pointers.md` at the live spec. Skip for
+Phase A tickets with no code work.
+
 ### 5. Brief the session
 State clearly and concisely:
 - **Where we are:** current phase, spec status, what was last done (from the activity-log watermark).

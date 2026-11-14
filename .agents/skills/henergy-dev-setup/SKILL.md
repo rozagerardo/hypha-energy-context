@@ -33,6 +33,8 @@ how to work with this developer (review mode, decision posture, SDD level, tone,
 4. **If `github.enabled: true` is in the developer's general config:** confirm `gh` is installed and
    authenticated, and point the developer to [`workflow/github-sync.md`](../../../workflow/github-sync.md).
 
+5. **If the developer is profile A or B and works in a code repo** (e.g. `value-x.com`): generate or
+   update its satellite and skills per [`workflow/satellite.md`](../../../workflow/satellite.md)
+   (procedure 1). Ask which repo; confirm the path; never push or commit in the code repo.
+
 Do not duplicate the schema or steps here: `workflow/personal-config.md` is the source of truth.
-(No satellite step: this repo has no satellite mechanism yet; code repos are cloned read-only under
-`../`, see `solution/tech/codebases.md`.)

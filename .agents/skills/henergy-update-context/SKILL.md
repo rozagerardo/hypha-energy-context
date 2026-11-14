@@ -19,4 +19,8 @@ Keeps the **local context files** current — *not* the GitHub board (that's
   over uncommitted work or a feature branch.
 - **No git (ZIP download):** say local sync isn't possible.
 
+After the pull, **if the developer is profile A or B**, run the satellite refresh from
+[`workflow/satellite.md`](../../../workflow/satellite.md) (procedure 2) in each code repo that has a
+`.henergy-context.local/`: update `personal.md`, `workflow.md`, `pointers.md`; 30-day cleanup of the specs files.
+
 **Procedure:** [`workflow/sync-context.md`](../../../workflow/sync-context.md)

@@ -1,6 +1,6 @@
 ---
 name: henergy-board
-description: Read or update Hypha's GitHub issues, PRs, and project board (#14 "Hypha Platform — Active Work") via the gh CLI. Use when a technical developer (github.enabled in their config) says "update the board", "sync this to GitHub", "move #X to In Review", "open the PR", "what's assigned to me", or "check GitHub". Reads are free; writes ALWAYS confirm first. Also fires as a soft step inside henergy-task-init and henergy-checkpoint.
+description: Read or update Hypha's GitHub issues, PRs, and project board (#13 "hypha.energy website development") via the gh CLI. Use when a technical developer (github.enabled in their config) says "update the board", "sync this to GitHub", "move #X to In Review", "open the PR", "what's assigned to me", or "check GitHub". Reads are free; writes ALWAYS confirm first. Also fires as a soft step inside henergy-task-init and henergy-checkpoint.
 audience: dev
 ---
 
@@ -12,7 +12,7 @@ audience: dev
 **Who it's for:** Technical developers with `github.enabled: true` in their config. **Skip silently**
 for others.
 
-Reads/writes GitHub issues, PRs, and the project board (#14 "Hypha Platform — Active Work") using
+Reads/writes GitHub issues, PRs, and the project board (#13 "hypha.energy website development") using
 the `gh` CLI — skills-over-MCP, not a GitHub MCP server. Reads are free; every write states the
 exact change and asks for a yes first (honoring the developer's `decision_posture`).
 
