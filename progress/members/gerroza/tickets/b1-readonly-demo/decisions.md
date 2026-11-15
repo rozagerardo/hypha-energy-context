@@ -91,3 +91,18 @@ Supersedes spec D1 (dropdown + `/platform` index) and spec item 5; also resolves
 - **Pattern-card candidates (not drafted):** (1) verify "it redirects" style claims against the live system before configuring allowlists (the `www`
   origin was assumed redirected and was not); (2) a read-only sandbox clone of the platform repo for partner-integration tests, with test config kept
   local and the production change made through the owner's normal flow.
+
+## D16 — value-x live; Edgar's denyse.org snippet checked (2026-11-15)
+
+- **value-x is live.** Zekeriya confirmed (2026-11-15): `https://www.value-x.com/platform/ponta-do-sol-energy-community`. Independent check from the
+  live HTML: the page contains `<iframe src="https://app.hypha.earth/embed/ponta-do-sol-energy-community" title="Ponta do Sol Energy Community" class="platform-frame">`.
+  The in-browser render was confirmed by Zekeriya, not by us; the phone-width check is still open.
+- **Edgar's snippet for denyse.org/pontodelsol is correct.** Same `src` and `title` as the value-x page; it differs only in sizing (inline
+  `width:100%;height:900px;border:0` versus value-x's CSS class: full width, viewport height under a fixed nav), which is per site and fine.
+  Route `https://app.hypha.earth/embed/ponta-do-sol-energy-community` answers 200 with
+  `frame-ancestors https://denyse.org https://value-x.com https://www.value-x.com`. `https://www.denyse.org` and `http://denyse.org`
+  redirect (301) to `https://denyse.org`, so the single origin listed is enough. denyse.org sends only `upgrade-insecure-requests` as CSP (no `frame-src` limit).
+  `denyse.org/pontodelsol` is a 404 now: the admin has not created the page yet. Risk to mention to Edgar: paste as plain text (rich-text email can curl the quotes).
+- **Documented** as a use case in `solution/tech/embedding-the-platform.md` (snippet, requirements, both cases).
+- **Pending:** Bert/admin adds the snippet; Edgar's sign-off on the delivery (path `/platform/<slug>`, no index); phone-width check; Block 3 inherits the mobile nav gap.
+

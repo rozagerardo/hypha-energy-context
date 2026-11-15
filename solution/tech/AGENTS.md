@@ -11,6 +11,7 @@ development task.
 |------|---------|
 | `overview.md` | Layers and data flow: edge, ingestion, oracle, EMS, settlement, API/EMOS, the Hypha platform bridge. |
 | `codebases.md` | The org repos as **engineering surfaces**: stack, how to run, how it deploys, who merges, gotchas. Which repos are cloned locally. |
+| `embedding-the-platform.md` | How a partner site shows an Energy Community through the read-only Hypha iframe: the snippet, requirements, the value-x and denyse.org cases. |
 
 ## Conventions
 
